@@ -8,6 +8,8 @@ import { Flex } from "@chakra-ui/react";
 
 export default function Home() {
   const [coordinates, setCoordinates] = useState({ lat: -23.5504, lng: -46.6339 });
+  const [type, setType] = useState('restaurants');
+  const [ratings, setRatings] = useState("")
   
   return (
     <Flex
@@ -19,8 +21,12 @@ export default function Home() {
       maxHeight={'100vh'}
       position={'relative'}
     >
-      {/* <Header />
-      <List /> */}
+      <Header
+        setType={setType}
+        setRatings={setRatings}
+        setCoordinates={setCoordinates}
+      />
+      {/* <List /> */}
       <Map coordinates={coordinates} setCoordinates={setCoordinates} />
     </Flex>
   )
