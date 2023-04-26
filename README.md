@@ -6,6 +6,9 @@ npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 npm i @material-ui/lab 
 ```
 ```
+npm i @material-ui/core
+```
+```
 npm i @react-google-maps/api 
 ```
 ```
